@@ -1,0 +1,617 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input .form-control:focus{
+    box-shadow: none;
+    border-color: none;
+}
+
+
+
+/* 字型 */
+.fs-7{
+    font-size: .75rem;
+}
+
+
+/* nav bar */
+.navborder{
+border-top: 4px solid #81d8d0;
+}
+
+@media screen and (max-width:768px){
+
+    .navborder-sm{
+        border-top: 4px solid #81d8d0;
+    }
+    .navborder-sm .navborder-sm{
+        border-top: 2px solid #81d8d0;
+    }
+    
+}
+
+
+.navbar-toggler{
+    border: none;
+}
+.search-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.nav-item{
+    font-size: .875rem;
+    line-height: 1.3;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+.nav-item:hover{
+    color:  rgb(0, 0, 0);
+}
+
+.nav-item a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #00a4b7;
+    transition: .4s .2s;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+
+.nav-item a span {
+    text-align: center;
+
+}
+
+
+/* brandmark */
+
+.brandmark{
+    height: auto;
+    width: 60%;
+}
+.navbar .form-control{
+    border-radius: 0px;
+}
+
+@media screen and (min-width:768px){
+    .brandmark{
+        height: auto;
+        width: 40%;
+    }
+}
+
+
+/* banner */
+.banner{
+    position: relative;
+}
+
+
+.banner img{
+    width: 100%;
+}
+
+
+.titlebutton {
+    margin: 2rem 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.titlebutton a {
+    font-size: .875rem;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 24px;
+    border: 1px solid #000;
+
+}
+
+.titlebutton a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #00a4b7;
+    transition: .4s .2s;
+}.titlebutton a:hover::after {
+    width: 100%;
+}
+.titlebutton a span {
+    text-align: center;
+
+}
+
+
+@media screen and (min-width:768px){
+    .banner-word{
+        position: absolute;
+        top:100%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        
+    }
+    .banner img{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:768px){
+
+    .imgbox{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+/* 主頁標題區塊排版 */
+.title {
+    text-align: center;
+    padding: 24px 0;
+
+}
+
+
+
+.title h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #000;
+    padding: 0 0 9px;
+}
+
+.title p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* sale區塊排版 */
+.saleblock {
+    width: 100%;
+    padding: 12px 0 24px;
+}
+
+.salebox {
+    padding: 2px;
+    aspect-ratio: 1/1;
+
+}
+
+.salebox article {
+    padding-right: 8px;
+}
+
+.salebox img {
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* 輪播箭頭 */
+.d-none .carousel-control-next,
+.carousel-control-prev {
+    width: auto;
+}
+
+.d-none .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: auto;
+    width: 50px;
+    line-height: 60px;
+    background-image: none;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.d-none .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 45px;
+    color: black;
+    vertical-align: middle;
+
+}
+
+.d-none .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 45px;
+    color: black;
+}
+
+/* 輪播手機設定 */
+.smsaleblock {
+    padding: 0px 15px;
+}
+
+
+/* season區塊排版 */
+.block {
+    border: 2px solid salmon;
+    aspect-ratio: 9/12;
+}
+
+.seasonphoto img {
+    padding-top: 2%;
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+
+}
+
+.seasontitle {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.seasonbutton {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.seasonbutton a {
+    padding-bottom: 0;
+    font-size: .875rem;
+    /* line-height: 1.71; */
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.seasonbutton a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #00a4b7;
+    transition: .4s .2s;
+}
+
+.seasonbutton a:hover::after {
+    width: 100%;
+}
+
+
+.seasonbutton a span {
+    text-align: center;
+
+}
+
+/* category區塊排版 */
+
+
+.category {
+    max-width: 1600px;
+    margin-bottom: 90px;
+}
+
+.catephoto {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.catephoto:hover{
+    border: 0.05px solid rgb(139, 139, 139);
+}
+.catephoto:hover img{
+    transform: scale(1.2);
+  }
+
+
+.catephoto img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: .5s;
+    object-fit: cover;
+    object-position: left top;
+    cursor: pointer;
+}
+
+.catebutton {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.catebutton a {
+    padding-bottom: 0;
+    font-size: .875rem;
+    line-height: 1.2;
+    /* border: 1px solid red; */
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.catebutton a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #00a4b7;
+    transition: .4s .2s;
+}
+
+.catebutton a:hover::after {
+    width: 100%;
+}
+
+
+.catebutton a span {
+    text-align: center;
+}
+
+/* story區塊排版 */
+.storybg {
+    background-color: #fafafa;
+}
+
+.story h2 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+
+
+.storycard {
+
+    border: 1px solid #ccc;
+    background-color: #f3f4f7;
+
+}
+.storycard a{
+    text-decoration: none;
+    color: #000;
+}
+.storycard img {
+    width: 100%;
+    aspect-ratio: 9/12;
+    object-fit: cover;
+    object-position: left top;
+    cursor: pointer;
+}
+
+.storycard h3 {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+
+.storycard h4 {
+    display: none;
+}
+
+
+
+
+/* story區塊電腦排版 */
+@media (min-width: 576px) {
+.storycard h4 {
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .875rem;
+    line-height: 24px;
+}
+.storycard {
+    min-height: 680px;
+    border: 1px solid #ccc;
+    background-color: #f3f4f7;
+
+}
+.storybutton {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.storybutton a {
+    padding-bottom: 0;
+    font-size: .875rem;
+    line-height: 1.71;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.storybutton a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #00a4b7;
+    transition: .4s .2s;
+}
+
+.storybutton a:hover::after {
+    width: 100%;
+}
+
+
+.storybutton a span {
+    text-align: center;
+
+}
+
+.storybox {
+    padding-top: 25px;
+    min-height: 130px;
+}
+}
+
+/* event */
+
+.event {
+    width: 100%;
+    height: auto;
+}
+
+.event img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.eventimgbox {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+/* event區塊 電腦排版 */
+
+@media (min-width: 576px) {
+
+    .eventbg {
+
+        border-top: 40px solid white;
+        border-bottom: 40px solid white;
+    }
+
+    .event {
+        position: relative;
+
+    }
+
+    .event img {
+        width: 100%;
+    }
+
+    .eventbox {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+
+
+
+/* brand */
+.brandend{
+    padding-bottom: 60px;
+}
+.brandend img{
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+.brandend p{
+
+    text-align: center; 
+}
+
+/* footer區塊排版 */
+.footerbg{
+    background-color: #81d8d0;
+
+}
+.footerborder{
+    border-bottom: rgb(0, 90, 100) 2px solid;
+}
+.footer h3{
+    font-weight: 600;
+    color: rgb(0, 90, 100);
+}
+
+.footer h5:hover{
+    color: rgb(0, 90, 100);
+}
+.footer i{
+    font-size: 2rem;
+    color: rgb(0, 90, 100);
+}
+
+.form-control:focus, .btn-check:focus, .btn:focus{
+    box-shadow: none;
+    border-color: none;
+}
+
+.btn-footer{
+    font-weight: 600;
+    color: rgb(0, 90, 100);
+    width: 100%;
+    border: #ffffff 1px solid;
+}
+
+.btn-footer:hover{
+    color: #ffffff;
+    width: 100%;
+    border: rgb(0, 90, 100) 1px solid;
+    background-color: #00a4b7;
+}
+.footer .nav-item{
+    display: block;
+}
+.footer .nav-item a{
+    display: inline-block;
+    color: #000;
+}
+.footer .nav-item a:hover{
+    display: inline-block;
+    color: rgb(0, 90, 100);
+}
+.footer .nav-item a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 0.8px;
+    background-color: rgb(0, 90, 100);
+    transition: .4s .2s;
+}
+
+.footer .nav-item a:hover::after {
+    width: 100%;
+}
+
